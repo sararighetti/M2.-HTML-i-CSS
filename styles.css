@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:wght@300;400;500&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    margin:0px;
+    padding:0px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif;
+    padding: 1vh 1vw;
+}
+ul{
+    list-style: none;
+}
+h1{
+    font-family:'Raleway', sans-serif;
+    font-weight:700;
+    font-size: 3.8vw;
+    letter-spacing: -0.10vw;
+    color: #cc9d8c;
+}
+h3{
+    font-size: 3vw;
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    color:#2b1616;
+}
+h5{
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.10vw;
+    font-size: 2.8vw;
+    color:#b66464; 
+}
+/* Header styles*/
+.header{
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/bilboard2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+.menu{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;   
+}
+.logo{
+    width: 50%;    
+    display: flex;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+.nav{
+    display: flex; 
+    flex-flow:row nowrap;     
+    font-size: 20px;  
+}
+.nav ul {
+    display:flex;
+    flex-flow: row nowrap;   
+}
+.nav a:hover{
+    color: #d8ac9c;
+}
+/* aboutMe styles*/
+.aboutMe{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+   background-color: rgb(238, 227, 227); 
+}
+.aboutMeImage{
+    padding: 1vh 5vw 1vh 1vw;
+}
+.aboutMeBox{
+    display: flex;
+    flex-flow: column nowrap;    
+}
+.title-aboutMe {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-right: 50px;
+}
+.aboutMeText{
+padding: 2vh 0vw 2vh 0vw; 
+font-size: 1.2vw;
+line-height:2.3vw; 
+font-weight: 300;
+width: 95%;
+}
+/* shop styles*/
+.shop{
+    background-color: rgb(238, 227, 227); 
+    display: flex;
+    flex-flow: column wrap;   
+}
+.shopTitulo{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 2vh 0vw 2vh 0vw;
+}
+.shopTitulo h3:hover{
+    color: #d17f61;
+}
+.productos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.shopList ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-bottom: 6vh;
+}
+.shopList a {
+    color: rgb(94, 92, 92);
+    font-size: 4vh;
+    font-weight: 300;
+}
+.shopList a:hover{
+    color: #d17f61;
+}
+/*Courses styles*/
+.courses{
+    display: flex;
+    flex-flow: column wrap; 
+    justify-content: space-between;
+    background-color:  #ebe5e3;
+}
+.coursesTitle{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+.coursesTitle h3:hover{
+    color: #d17f61;
+}
+.coursesBox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.cours ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.coursImage{
+    display: flex;
+    align-self: center;
+    padding: 1vh 1vw 1vh 1vw;
+}
+.cours ul li{
+   padding: 4vh;
+   color: rgb(94, 92, 92);
+   font-size: 4vh;
+   font-weight: 300;
+}
+.cours button{
+    border: none;
+    outline: 0;
+    padding: 1vh 1vw;
+    color:#07031a;
+    background-color:#918986;;
+    text-align: center;
+    cursor: pointer;
+    width: 20%;
+    font-size: 1.25vw;
+    margin-bottom: 2.5vh;
+}
+.cours button:hover{
+    opacity: 0.7;
+    color: #f4f6ff;
+    background-color: #4f8a8b;
+}
+/* footer styles*/
+.footer{
+    background-color: #b8b6b6;
+    padding: 2vh 2vw;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.legal a{
+    color: rgb(139, 136, 136);
+}
+.social a:hover{
+    color: #4f8a8b;
+}
+
+ /* Media queries moviles*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+.header{
+    max-height: 8vh;
+}
+.logo{
+    width: 10%;  
+ }
+ .nav a{
+     font-size: 2.3vw;
+     line-height: 5vw; 
+     padding:6px;
+ }
+ .aboutMeBox{
+     padding: 1vh 2vw 0vh 1vw;
+ }
+ .title-aboutMe{
+    padding:0px;
+ }
+ .aboutMeImage {
+    display: none; 
+}
+ .title-aboutMe h1{
+    font-size:6vw;
+    align-self: center;
+ }
+ .aboutMeText{
+    font-size: 3.5vw;
+    line-height: 5vw;   
+    align-self:center;
+}
+.shopTitulo{
+    padding: 1vh 1vw 1vh 1vw;   
+}
+.shopTitulo h3{
+    font-size:5vw;
+}
+.shopTitulo p {
+ font-size: 3.5vw;
+}
+/* Cambia el flow porque cambian las dimensiones de la pantalla, las fotos
+ahora son dos por row*/
+.productos {
+   display: flex;
+   flex-flow: row wrap; 
+   padding: 1vh 18vw 1vh 9vw;
+}
+ .producto{
+   width: 35%;  
+}
+/* Las categorias de productos desaparecen*/
+.shopList{
+    display: none;
+}
+.coursesTitle h3  {
+    font-size:5vw;
+}
+.cours h5 {
+    font-size: 3vw;
+}
+.cours p{
+    font-size: 3vw;
+}
+.cours button{
+    font-size: 1vh;
+}
+.cours ul li{
+    padding:0.5vh;
+}
+.coursImage{
+    width: 38%; 
+    padding-right: 2vw;;
+}  
+.footer {  
+    max-height: 6vh;
+}
+.Contact {
+    font-size:1.7vw;  
+}
+.legal {
+    font-size:1.2vw;  
+}
+.social{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.social img{
+    width: 50%;
+}
+}
