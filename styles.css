@@ -41,6 +41,9 @@ h5{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;   
+    position: sticky;
+    top: 0;
+    
 }
 .menu{
     display:flex;
@@ -51,8 +54,8 @@ h5{
 .logo{
     width: 50%;    
     display: flex;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 .nav{
     display: flex; 
@@ -73,9 +76,10 @@ h5{
     justify-content: space-around;
     align-items: center;
    background-color: rgb(238, 227, 227); 
+  /* padding-top: 30vh;*/
 }
 .aboutMeImage{
-    padding: 1vh 5vw 1vh 1vw;
+    margin: 1vh 5vw 1vh 1vw;
 }
 .aboutMeBox{
     display: flex;
@@ -99,15 +103,19 @@ width: 95%;
 .shop{
     background-color: rgb(238, 227, 227); 
     display: flex;
-    flex-flow: column wrap;   
+    flex-flow: column wrap;  
 }
 .shopTitulo{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
-    align-items: center;
-    padding: 2vh 0vw 2vh 0vw;
+    text-align: center;
+    margin: 10px;
+    
+}
+.shopTitulo p {
+    padding: 10px;
 }
 .shopTitulo h3:hover{
     color: #d17f61;
@@ -117,18 +125,16 @@ width: 95%;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
-.shopList ul {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    padding-bottom: 6vh;
+.producto{
+    text-align: center;  
+    margin: 0 auto;
 }
-.shopList a {
+.producto a {
     color: rgb(94, 92, 92);
     font-size: 4vh;
-    font-weight: 300;
+    font-weight: 300; 
 }
-.shopList a:hover{
+.producto a:hover{
     color: #d17f61;
 }
 /*Courses styles*/
@@ -137,11 +143,13 @@ width: 95%;
     flex-flow: column wrap; 
     justify-content: space-between;
     background-color:  #ebe5e3;
+    
 }
 .coursesTitle{
     display: flex;
     flex-flow: column wrap;
     align-content: center;
+    margin: 10px;
 }
 .coursesTitle h3:hover{
     color: #d17f61;
@@ -205,10 +213,18 @@ width: 95%;
 @media only screen and (max-width: 600px) {
 
 .header{
-    max-height: 8vh;
+    max-height: 6vh;
+}
+.menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 .logo{
     width: 10%;  
+    padding-top: 0;
+    margin-top: 0;
  }
  .nav a{
      font-size: 2.3vw;
@@ -244,18 +260,17 @@ width: 95%;
 }
 /* Cambia el flow porque cambian las dimensiones de la pantalla, las fotos
 ahora son dos por row*/
-.productos {
-   display: flex;
-   flex-flow: row wrap; 
-   padding: 1vh 18vw 1vh 9vw;
+.productos{
+        display: flex;
+        flex-flow: row wrap; 
 }
- .producto{
-   width: 35%;  
+.producto{
+    flex: 1 1 50%;
 }
-/* Las categorias de productos desaparecen*/
-.shopList{
-    display: none;
+ .producto a{
+ font-size: 2vh;
 }
+/*section courses*/
 .coursesTitle h3  {
     font-size:5vw;
 }
