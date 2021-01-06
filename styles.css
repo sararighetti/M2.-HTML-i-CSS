@@ -76,7 +76,6 @@ h5{
     justify-content: space-around;
     align-items: center;
    background-color: rgb(238, 227, 227); 
-  /* padding-top: 30vh;*/
 }
 .aboutMeImage{
     margin: 1vh 5vw 1vh 1vw;
@@ -111,8 +110,7 @@ width: 95%;
     justify-content: center;
     align-content: center;
     text-align: center;
-    margin: 10px;
-    
+    margin: 10px;   
 }
 .shopTitulo p {
     padding: 10px;
@@ -142,8 +140,7 @@ width: 95%;
     display: flex;
     flex-flow: column wrap; 
     justify-content: space-between;
-    background-color:  #ebe5e3;
-    
+    background-color:  #ebe5e3;   
 }
 .coursesTitle{
     display: flex;
